@@ -17,10 +17,8 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    ("Work Streams", "https://www.youtube.com/playlist?list=PLpa_PICUSK_uOb4j-MK3CesNY1_TUAge2"),
+    ("Future Project Ideas", "https://docs.google.com/document/d/14dTTLTASmz_hC_drFO_hJ_BO871pb0IAR_tB4ydJLFQ/edit?tab=t.0#heading=h.i95iog27w0jv")
 )
 
 # Social widget
