@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MNIST-SAE Log 10</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Work Done set up loop for generating images for all the depths started looking into the Meta-SAE Paper. This is the chatgpt partial explanation..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/mnist-sae-log-10.html" rel="bookmark"
+             title="Permalink to MNIST-SAE Log 10">MNIST-SAE Log 10</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-04T23:31:00-05:00">
+                Published: Mon 04 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->        <h2>Work Done</h2>
+<ul>
+<li>set up loop for generating images for all the depths </li>
+<li>started looking into the <a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">Meta-SAE Paper</a>. This is the <a href="https://chatgpt.com/c/6729ad14-4880-8004-acfc-60a3f2d43514">chatgpt partial explanation</a></li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>what is a meta-sae latent</li>
+<li>
+<p>what is an sae latent</p>
+</li>
+<li>
+<p>Why do the activation trends decrease over time. </p>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>WRITE UP A Document compiled what I have found --&gt; communicate it well. Does not matter if it means nothing just have it out there. <ul>
+<li>(1) Look over every log I ever wrote and compile the next steps learnings questions etc.<ul>
+<li>Can also write a script to do it but it probably takes away from the reflection component. </li>
+</ul>
+</li>
+<li>(2) Try to answer some of the questions </li>
+<li>(3) Create graphs to show data and pick out interesting ones </li>
+</ul>
+</li>
+<li>
+<p>Post that document here? Maybe on lesswrong. </p>
+</li>
+<li>
+<p>train meta-saes on different dictionary sizes (maybe double the deeper you go)</p>
+</li>
+<li>auto-interp : pretty useful for EMNIST or MNIST since it could just find the ones. <ul>
+<li>alternatively we can use our EMNIST classifier to take the images and get the predictions on each one. <ul>
+<li><a href="https://github.com/pranavphoenix/WaveMix"><strong>WavMix is the SOTA Classifier for EMNIST</strong></a></li>
+</ul>
+</li>
+<li>Can use a different dataset since we have CIFAR100 but those are categories so not as fine-tuned? Probably good enough though. <ul>
+<li><a href="https://github.com/google-research/sam">SAM by Google is the SOTA for CIFAR100</a></li>
+</ul>
+</li>
+<li>if there is a neuron that maximizes on a specific class then that could be interesting </li>
+<li><strong>Might have to regenerate the images to be easier to split or have them generated separately into folders?</strong></li>
+<li><a href="https://github.com/HugoFry/mats_sae_training_for_ViTs/blob/main/vit_sae_analysis/dashboard_fns.py">Hugo Fry's Github</a> has feature activation analysis stuff which could be useful if I ask gpt/claude about how to use it for my code </li>
+</ul>
+</li>
+</ul>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

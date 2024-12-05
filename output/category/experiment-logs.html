@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Interp Explorer - Experiment Logs</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+
+                <aside id="featured" class="body">
+                    <article>
+                        <h1 class="entry-title"><a href="/mnist-sae-log-11.html">MNIST-SAE Log 11</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2024-11-09T23:56:00-05:00">
+                Published: Sat 09 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info --><h2>Work Done</h2>
+<ul>
+<li>Established rudimentary interp via EMNIST classification labels </li>
+<li>Fixed up some of the experiment code to sagve the indices </li>
+<li>
+<p>got preliminary findings that there is a optimal depth for meta-saes</p>
+</li>
+<li>
+<p>Found that the average amount of activations do increase the deeper you go which implies some level of fine-grained-ness </p>
+</li>
+<li>The amount of activaitons of the max hit their peak at 2 depths in. </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>Am I actually doing what I think I am doing? <ul>
+<li>what I am trying to do: Take a trained MNIST model, feed it MNIST data, train an SAE on those. Track the values with EMNIST data to see what patterns there are outside of numbers ( in this case a balanced dataset of letters and numbers)</li>
+<li>the max activatoins are seeing if tehre are any neurons taht fire exclusively on one label OR if there are some basic trends like letters and numbers </li>
+</ul>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Plot some of the data using the <a href="https://chatgpt.com/c/67305526-3b20-8004-bcc0-1d870e8904d0">techniques from GPT</a></li>
+<li><strong>Create a preliminary writeup using the charts and any other ones to show what i have so far</strong> <ul>
+<li>REPLICATE, REPLICATE, REPLICATE with other datasets (like fruit or other EMNISTs) --&gt; basically take all the classification datasets </li>
+</ul>
+</li>
+<li>Also need to look at the analysis for the <a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">meta-sae paper</a></li>
+</ul>
+<h2>Cool Stuff</h2>
+<ul>
+<li><a href="https://www.kaggle.com/code/dipuk0506/spinalnet-fruit360-99-99-accuracy">Fruit Classification Dataset</a>: Has 141 Classes</li>
+<li><a href="https://arxiv.org/abs/2406.03662">SAE Vision Explainability</a></li>
+<li><a href="https://arxiv.org/pdf/2406.11944">Transcoders</a> as a way to interpret MLP layers</li>
+</ul>                    </article>
+                </aside><!-- /#featured -->
+                    <section id="content" class="body">
+                        <h1>Other articles</h1>
+                        <hr />
+                        <ol id="posts-list" class="hfeed">
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-10.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 10">MNIST-SAE Log 10</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-04T23:31:00-05:00">
+                Published: Mon 04 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>set up loop for generating images for all the depths </li>
+<li>started looking into the <a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">Meta-SAE Paper</a>. This is the <a href="https://chatgpt.com/c/6729ad14-4880-8004-acfc-60a3f2d43514">chatgpt partial explanation</a></li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>what is a meta-sae latent</li>
+<li>
+<p>what is an sae latent</p>
+</li>
+<li>
+<p>Why do the activation trends decrease over time. </p>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>WRITE UP A Document compiled …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-10.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-9.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 9">MNIST-SAE Log 9</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-03T20:44:00-05:00">
+                Published: Sun 03 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>set up initial loop for infinite saes </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>analysis how? </li>
+<li>should I pivot to ... EMNIST? or another mnist dataset </li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>
+<p>DO 1 epoch for testing purposes</p>
+</li>
+<li>
+<p>look into the normalization values for the transforms of emnist and mnist </p>
+</li>
+<li>finish that loop</li>
+<li>clear out activations </li>
+<li>analyze the activations …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-9.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-8.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 8">MNIST-SAE Log 8</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-03T00:32:00-05:00">
+                Published: Sun 03 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>Loaded in EMNIST dataset and ran an SAE + meta-sae on it. </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>how do I measure the impact of continuous meta-saes? <ul>
+<li>run MNIST dataset and see if there are more distinct pattenrs that emerge over time </li>
+</ul>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Graph the activation distribution for the sae vs the meta-sae …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-8.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-7.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 7">MNIST-SAE Log 7</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-01T23:49:00-05:00">
+                Published: Fri 01 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>fixed sae shape bug </li>
+<li>ran visualization code on meta-sae </li>
+<li>added EMNIST dataset</li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>how could I measure what changes as you get more meta? <ul>
+<li>some basic ideas: (LOOK AT THE PAPER!!!)<ul>
+<li>(1) track the amount/trend of nonzero activations</li>
+<li>(2) track the distribution of nonzero activations (ie are …</li></ul></li></ul></li></ul>
+                        <a class="readmore" href="/mnist-sae-log-7.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-6.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 6">MNIST-SAE Log 6</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-31T16:55:00-05:00">
+                Published: Thu 31 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>cleaned up training pipeline for mnist saes </li>
+<li>fixed dimension error where I was passing in the wrong channle (3 channel as opposed to 1) and fixed it so the MNIST was 3 channel input <ul>
+<li>standardization of images </li>
+</ul>
+</li>
+<li>added caching code to the EnhancedSAE since it seems to perform …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-6.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-5.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 5">MNIST-SAE Log 5</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-30T11:35:00-05:00">
+                Published: Wed 30 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>found a bug in the caching code that resulted in incorrect caching (ie getting 150k samples as opposed to 50k inputted)</li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>why is the bug happening</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>fix the bug</li>
+</ul>
+<h2>Cool Stuff</h2>
+<p><a href="https://huggingface.co/openbmb/MiniCPM-V-2">VLM - openbmb/MiniCPM-V-2</a>
+<a href="https://pytorch.org/vision/stable/datasets.html">Pytorch Datasets</a></p>
+<h2>Note: Wrote this on the 31st since forgot to …</h2>
+                        <a class="readmore" href="/mnist-sae-log-5.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-4.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 4">MNIST-SAE Log 4</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-29T11:12:00-05:00">
+                Published: Tue 29 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>Loaded in CIFAR-10 data</li>
+<li>ran it through MNIST + the first sae</li>
+<li>cached all the activations </li>
+<li>found max activating images</li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>struggling to understand does the dataset havfe a constat image that it pulls from or is it randomized every time? <ul>
+<li>need to validate that the images are not …</li></ul></li></ul>
+                        <a class="readmore" href="/mnist-sae-log-4.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/vit-sae-log-4.html" rel="bookmark"
+                               title="Permalink to ViT-SAE Log 4">ViT-SAE Log 4</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-22T23:18:00-05:00">
+                Published: Tue 22 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>Loaded in data by label for the dsprites data </li>
+<li>attempted to start linear probe training </li>
+<li>looked at <a href="https://www.perplexity.ai/search/what-are-some-good-channels-li-dyJf2sSIQa6ydXemcGxAbQ">refactoring + design pattern</a> stuff </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>should I train on mlp or logistic regression? <ul>
+<li>does it matter? </li>
+</ul>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>have a pipeline up and running to train a probe on the embeddings …</li></ul>
+                        <a class="readmore" href="/vit-sae-log-4.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/vit-sae-log-3.html" rel="bookmark"
+                               title="Permalink to ViT-SAE Log 3">ViT-SAE Log 3</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-21T21:19:00-05:00">
+                Published: Mon 21 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>loaded in the dsprites dataset + got it preprocessed properly </li>
+<li>created the probes </li>
+<li>refactored a bit of the dataset and model structs</li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>What is a linear probe? Like actually. </li>
+<li>what is a good way to manage storage? </li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Need to make the full data pipeline. dsprites data …</li></ul>
+                        <a class="readmore" href="/vit-sae-log-3.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/vit-sae-log-2.html" rel="bookmark"
+                               title="Permalink to ViT-SAE Log 2">ViT-SAE Log 2</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-20T23:43:00-05:00">
+                Published: Sun 20 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Background</h2>
+<p><a href="https://github.com/timaeus-research/devinterp">Devinterp</a> is the field that seeks to understand what leads to the emergence of model properties during training. I think it would be cool to use linear probes to examine when and where meaningful features emerge in a model. </p>
+<h2>Work Done</h2>
+<ul>
+<li>created some basic training code for a vit …</li></ul>
+                        <a class="readmore" href="/vit-sae-log-2.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/vit-sae-log-1.html" rel="bookmark"
+                               title="Permalink to ViT-SAE Log 1">ViT-SAE Log 1</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-15T16:11:00-05:00">
+                Published: Tue 15 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Background</h2>
+<p>Attempting to create Meta-SAEs on a classification Vit. The hope is that this gives more access to fine-grained features. </p>
+<p><a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">Meta-SAE</a>
+<a href="https://www.lesswrong.com/posts/bCtbuWraqYTDtuARg/towards-multimodal-interpretability-learning-sparse-2">ViT-SAE Training</a></p>
+<p><a href="https://www.soniajoseph.ai/multimodal-interpretability-in-2024/">State of Vision Interp</a></p>
+<h2>Work Done</h2>
+<ul>
+<li>Wrote some boilerplate Vit and training it currently (it is based off of a google one so may not have 'pure …</li></ul>
+                        <a class="readmore" href="/vit-sae-log-1.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-3.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 3">MNIST-SAE Log 3</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-11T17:49:00-05:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h3>Goal: Figure out what features (as in curves, numbers, thoughts, ideas) are inside MNIST. Want to break it apart akin to breaking apart a transformer with an SAE (visualizations and stuff)</h3>
+<h2>Work Done</h2>
+<ul>
+<li>analyzed MNIST through generating maximally activating images for each neuron in layer fc2</li>
+<li>looked at SAE reconstructions …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-3.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-2.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 2">MNIST-SAE Log 2</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-10T13:20:00-05:00">
+                Published: Thu 10 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Work Done</h2>
+<ul>
+<li>Fixed SAE training + testing code </li>
+<li>Analyzed max activations of mnist, sae, and meta-sae </li>
+</ul>
+<p><a href="https://github.com/jain18ayush/mnist-sae"><strong>CODE</strong></a></p>
+<h2>Confusions</h2>
+<ul>
+<li>What else can I do besides max activations to track features + latents?</li>
+<li>What happens when I do the decoder instead of the encoder? Can I take something out of the decoder or is …</li></ul>
+                        <a class="readmore" href="/mnist-sae-log-2.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="/mnist-sae-log-1.html" rel="bookmark"
+                               title="Permalink to MNIST-SAE Log 1">MNIST-SAE Log 1</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-09T18:40:00-05:00">
+                Published: Wed 09 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->                        <h2>Background</h2>
+<p>Sparse Autoencoders are a way to understand the internal structure of model computations. The principle is that you take the activations of a model, train an SAE on it and then do max activation tracking to see what neurons in the sae fire the most on some set of …</p>
+                        <a class="readmore" href="/mnist-sae-log-1.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+                    </ol><!-- /#posts-list -->
+                    </section><!-- /#content -->
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

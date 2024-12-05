@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MNIST-SAE Log 1</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Background Sparse Autoencoders are a way to understand the internal structure of model computations. The principle is that you take the..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/mnist-sae-log-1.html" rel="bookmark"
+             title="Permalink to MNIST-SAE Log 1">MNIST-SAE Log 1</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-09T18:40:00-05:00">
+                Published: Wed 09 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->        <h2>Background</h2>
+<p>Sparse Autoencoders are a way to understand the internal structure of model computations. The principle is that you take the activations of a model, train an SAE on it and then do max activation tracking to see what neurons in the sae fire the most on some set of concepts. This works is an attempt to extend/replicate the paper <a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">Showing SAE Latents Are Not Atomic Using Meta-SAEs</a> which trained SAEs on an SAE that was trained on gpt-2 small residual stream. The goal of my work is train an SAE on an SAE trained on MNIST. I am still trying to figure out what will happen (maybe there will be max activations that activate on more <em>curvy</em> numbers). </p>
+<h2>Work Done</h2>
+<ul>
+<li>Trained MNIST</li>
+<li>Trained an SAE on MNIST </li>
+<li>Trained an SAE on an SAE on MNIST </li>
+</ul>
+<p><a href="https://github.com/jain18ayush/mnist-sae"><strong>CODE</strong></a></p>
+<h2>Confusions</h2>
+<ul>
+<li>Why does the SAE have a smaller hidden dim rather than a larger one? </li>
+<li>What does success look like for this project </li>
+<li>How would I track which neurons are <a href="https://distill.pub/2020/circuits/curve-detectors/">curve detectors</a>?</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Track the max activations of <ul>
+<li>MNIST neurons</li>
+<li>SAE1 neurons </li>
+<li>SAE2 neurons </li>
+</ul>
+</li>
+<li>See whether the activations become more concentrated as you go down. So the idea is that on mnist the neurons activate strongly on 3 numbers, on the sae1 it will be on 2 numbers and on sae2 it may be on 1 numbe really strongly. <ul>
+<li>This would imply that the features become more atomic as you go down </li>
+</ul>
+</li>
+</ul>
+<p><em>Stream Link:</em> <a href="https://youtube.com/live/QG-YNsHa0EQ"><em>https://youtube.com/live/QG-YNsHa0EQ</em></a></p>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MNIST-SAE Log 3</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Goal: Figure out what features (as in curves, numbers, thoughts, ideas) are inside MNIST. Want to break it apart akin to breaking apart a..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/mnist-sae-log-3.html" rel="bookmark"
+             title="Permalink to MNIST-SAE Log 3">MNIST-SAE Log 3</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-11T17:49:00-05:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->        <h3>Goal: Figure out what features (as in curves, numbers, thoughts, ideas) are inside MNIST. Want to break it apart akin to breaking apart a transformer with an SAE (visualizations and stuff)</h3>
+<h2>Work Done</h2>
+<ul>
+<li>analyzed MNIST through generating maximally activating images for each neuron in layer fc2</li>
+<li>looked at SAE reconstructions + maximal activations for SAE and Meta-SAE <ul>
+<li>also looked at cosine similarity between them </li>
+<li>and max activating features </li>
+<li>also made a 2d PCA </li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/jain18ayush/mnist-sae"><strong>CODE</strong></a></p>
+<h2>Confusions</h2>
+<ul>
+<li>What do the maximally activating images mean? </li>
+<li>What do the cosine sims + PCA mean </li>
+<li>Should I switch to doing this on gpt2 or a transformer model (maybeAudioLM](https://google-research.github.io/seanet/audiolm/examples/) or <a href="https://er537.github.io/blog/2023/09/05/whisper_interpretability.html">whisper</a>)</li>
+<li><strong><em>How does any of this relate to features?</em></strong> </li>
+<li>Does improving the optimization algorithm significantly change the optimized images generated (does it parse the internals meaningfully better)</li>
+</ul>
+<h2>Observations</h2>
+<ul>
+<li>The 2d Latent space of SAE has a right Angle. Appears there are two directions. </li>
+<li>The cosine similarity is far more sparse on the Meta-SAE than the SAE </li>
+<li>There is only one direction in the latent space of the MEta-SAE</li>
+<li>There are two distinct types of noise images in the pictures === The first is like a barcode while the others are a gray fuzzy mess</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Find out how to save everything to a pdf as reports </li>
+<li>Analyze it? for... seeing what each neuron in the SAE represents </li>
+<li>But how did they run max activaitons through the meta-sae?? they as in: - <strong><a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5 showing-sae-latents-are-not-atomic-using-meta-saes">showing-sae-latents-are-not-atomic-using-meta-saes</a></strong> </li>
+<li>Generate thea ctivation map for fc1 on MNIST </li>
+</ul>
+<h2>Big Question: How do I look at a neuron in an SAE and tell what feature of the larger model it is representing?</h2>
+<p><em>Stream Link:</em> <a href="https://youtube.com/live/pX6yByN8AFo"><em>https://youtube.com/live/pX6yByN8AFo</em></a></p>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

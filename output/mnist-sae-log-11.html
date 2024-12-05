@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MNIST-SAE Log 11</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Work Done Established rudimentary interp via EMNIST classification labels Fixed up some of the experiment code to sagve the indices got..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/mnist-sae-log-11.html" rel="bookmark"
+             title="Permalink to MNIST-SAE Log 11">MNIST-SAE Log 11</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-11-09T23:56:00-05:00">
+                Published: Sat 09 November 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->        <h2>Work Done</h2>
+<ul>
+<li>Established rudimentary interp via EMNIST classification labels </li>
+<li>Fixed up some of the experiment code to sagve the indices </li>
+<li>
+<p>got preliminary findings that there is a optimal depth for meta-saes</p>
+</li>
+<li>
+<p>Found that the average amount of activations do increase the deeper you go which implies some level of fine-grained-ness </p>
+</li>
+<li>The amount of activaitons of the max hit their peak at 2 depths in. </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>Am I actually doing what I think I am doing? <ul>
+<li>what I am trying to do: Take a trained MNIST model, feed it MNIST data, train an SAE on those. Track the values with EMNIST data to see what patterns there are outside of numbers ( in this case a balanced dataset of letters and numbers)</li>
+<li>the max activatoins are seeing if tehre are any neurons taht fire exclusively on one label OR if there are some basic trends like letters and numbers </li>
+</ul>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>Plot some of the data using the <a href="https://chatgpt.com/c/67305526-3b20-8004-bcc0-1d870e8904d0">techniques from GPT</a></li>
+<li><strong>Create a preliminary writeup using the charts and any other ones to show what i have so far</strong> <ul>
+<li>REPLICATE, REPLICATE, REPLICATE with other datasets (like fruit or other EMNISTs) --&gt; basically take all the classification datasets </li>
+</ul>
+</li>
+<li>Also need to look at the analysis for the <a href="https://www.alignmentforum.org/posts/TMAmHh4DdMr4nCSr5/showing-sae-latents-are-not-atomic-using-meta-saes">meta-sae paper</a></li>
+</ul>
+<h2>Cool Stuff</h2>
+<ul>
+<li><a href="https://www.kaggle.com/code/dipuk0506/spinalnet-fruit360-99-99-accuracy">Fruit Classification Dataset</a>: Has 141 Classes</li>
+<li><a href="https://arxiv.org/abs/2406.03662">SAE Vision Explainability</a></li>
+<li><a href="https://arxiv.org/pdf/2406.11944">Transcoders</a> as a way to interpret MLP layers</li>
+</ul>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

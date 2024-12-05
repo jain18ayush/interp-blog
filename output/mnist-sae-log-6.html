@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MNIST-SAE Log 6</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Work Done cleaned up training pipeline for mnist saes fixed dimension error where I was passing in the wrong channle (3 channel as opposed to 1)..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Interp Explorer</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/experiment-logs.html">Experiment Logs</a></li>
+                                                <li><a href="/category/personal.html">Personal</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/mnist-sae-log-6.html" rel="bookmark"
+             title="Permalink to MNIST-SAE Log 6">MNIST-SAE Log 6</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2024-10-31T16:55:00-05:00">
+                Published: Thu 31 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/ayush-jain.html">Ayush Jain</a>
+                </address>
+        <p>In <a href="/category/experiment-logs.html">Experiment Logs</a>.</p>
+        
+</footer><!-- /.post-info -->        <h2>Work Done</h2>
+<ul>
+<li>cleaned up training pipeline for mnist saes </li>
+<li>fixed dimension error where I was passing in the wrong channle (3 channel as opposed to 1) and fixed it so the MNIST was 3 channel input <ul>
+<li>standardization of images </li>
+</ul>
+</li>
+<li>added caching code to the EnhancedSAE since it seems to perform better</li>
+<li>attempted to visualize meta-sae but ran into a bug </li>
+</ul>
+<h2>Confusions</h2>
+<ul>
+<li>How is a model like an autoencoder capable of learning? Like what mathematically allows for it? </li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li>figure out shape error bug (this is like 90% of the bugs I face) [x]</li>
+<li>run the image visualization on the meta-sae [x]</li>
+<li>fully establish the experiment pipelin to actually test whether the meta-sae has different representations<ul>
+<li>(1) track the amount of 10+ image pairs <ul>
+<li>as a future step make it unbounded rather than picking only top 10 or play with thresholds </li>
+</ul>
+</li>
+<li>(2) set up a VLM do to auto-interp<ul>
+<li>open source it? </li>
+<li>Ask Louka (from slack) how he did interp for his vision sae </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Once I have a working analysis portion set up infinite sae training<ul>
+<li>need a bigger dataset and/or (probably a train test split weighted 80% towards test side for MNIST) </li>
+</ul>
+</li>
+<li>Look at <a href="https://cdn.openai.com/papers/sparse-autoencoders.pdf">Top-K Sae</a> and maybe use it since current training trends are pretty bad (&gt;= 7.0 loss)</li>
+</ul>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="https://www.linkedin.com/in/ayush-jain-uiuc/">LinkedIn</a></li>
+                                                        <li><a href="github.com/jain18ayush/">GitHub</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>
