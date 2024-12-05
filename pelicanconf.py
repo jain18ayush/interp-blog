@@ -1,8 +1,8 @@
 AUTHOR = 'Ayush Jain'
 SITENAME = 'Interp Explorer'
 SITEURL = ""
-
 PATH = "content"
+MARKUP = ('md', 'rst')  # This enables Markdown and reStructuredText support
 
 TIMEZONE = 'EST'
 
