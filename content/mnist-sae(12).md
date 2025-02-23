@@ -12,6 +12,8 @@ Category: Experiment Logs
 - Do they actually measure how broad each concept becomes 
 
 ## Next Steps
+- Find the most similar vectors from one layer to the other and see what happens when you apply them?? 
+
 - Separate out results as well because some datasets are overpowering others. 
 - Analyze results and see if I can come to a conclusion 
 - If so then try to invalidate those results 
